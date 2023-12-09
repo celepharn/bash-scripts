@@ -3,6 +3,7 @@
 <p>Dependencies</p> 
 <ul>
   <li>Dunst</li>
+  <li>Noto fonts emoji</li>
 </ul>
 
 ## Theme previews 👀
