@@ -1,5 +1,6 @@
 #!/bin/sh
-# this is a script to set keep refind working
+# Author: github.com/celepharn
+# this is a script to keep refind working
 sudo pacman -Syu
 dro=$(ls /efi/ | grep 0e)
 dri=$(ls /efi/"$dro" | grep lts)
