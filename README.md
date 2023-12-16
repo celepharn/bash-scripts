@@ -16,15 +16,15 @@
   <li>CPU temps</li>
   <li>Battery level and status</li>
 </ul>
-<p>wanting to solve this I made a couple of scripts to extract the info needed and see it through dunst. Hope every script name if self explainatory but there are two classes of scripts in here: ones you need to execute every time for they to work, and ones you need to autostart. In the latter part there are just two, these being battery_notification.sh, mem_alert.sh and autostart.sh so for this to work you need to autostart them, see the installation section.</p>
-<p>With this out of the way, hope the scripts are useful and please feel free and modify it to your needs.</p>
+<p>Wanting to solve this I made a couple of scripts to extract the info needed and see it through dunst. Hope every script name if self explainatory but there are two classes of scripts in here: ones you need to execute every time for them to work, and ones you need to autostart. In the latter part there are just three, these being battery_notification.sh, mem_alert.sh and autostart.sh so for this to work you need to autostart them, see the installation section.</p>
+<p>With this out of the way, hope the scripts are useful and please feel free and modify them to your needs.</p>
 <p>Dependencies</p> 
 <ul>
   <li>Dunst</li>
   <li>Noto fonts emoji</li>
 </ul>
 
-<p style=strong><b>Notification previews 👀</b></p>
+<b>Notification previews 👀</b>
 <p align="center">
   <img src="bat_now.png"/>
   <p align="center">🔌 Current battery status and charge</p>
@@ -51,17 +51,17 @@ find ~/.config/bash-scripts -type f -name '*.sh' -exec chmod +x {} \;
 # Installing dependencies, I use Arch BTW
 sudo pacman -S noto-fonts-emoji dunst
 ```
-<p>And finally configure them using your WM/DE of choice. For example, for <a href='https://github.com/hyprwm/Hyprland/'>Hyprland</a> we would have</p>
+<p>And finally bind/autostart them using your WM/DE of choice. For example, for <a href='https://github.com/hyprwm/Hyprland/'>Hyprland</a> we would have</p>
 
 ```
 # For now scripts
-bind=SUPERCTRL,R,exec,~/.config/hypr/nameOfScript.sh
+bind=SUPERCTRL,R,exec,~/.config/hypr/mem_now.sh
 # For autostart scripts
 exec-once=~/.config/hypr/battery_notification.sh
 ```
-<p>in your ~/.config/hypr/hyprland.conf.</p>
+<p>in your ~/.config/hypr/hyprland.conf, these are just a couple examples.</p>
 <p>Please remember to change the actual name of the script you would want to use.</p>
 
 <b>A final note 🗒️</b>
-<p>The script that needs a comment is update.sh, this is a script to automate the process of keeping <a href='https://www.rodsbooks.com/refind/'>rEFInd</a> working every time there's a kernel update, and would need modification to suit your system. Just if you are a <a href='https://www.rodsbooks.com/refind/'>rEFInd</a> user and would want to use this.</p>
+<p>The script that needs a comment is update.sh, this is a script to automate the process of maintaining <a href='https://www.rodsbooks.com/refind/'>rEFInd</a> every time there's a kernel update, this most definitely would need modification to suit your system; this is just if you are a <a href='https://www.rodsbooks.com/refind/'>rEFInd</a> user and would want to use this.</p>
 </body>
