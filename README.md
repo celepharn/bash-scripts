@@ -1,8 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+<body>
 <p align="center">
-<img src='bgbash.png' margin=-2000px padding=-200px />
+<img src='bgbash.png'/>
 </p>
 
-# Bash scripts 🐧
+<h1>Bash scripts 🐧</h1>
 <p>Welcome, this is a collection of scripts to add functionality to a minimal Linux system. I use a small 14" laptop and running a bar just takes too much space of my screen real state so I ditched it, however I missed info such as</p>
 <ul>
   <li>Available RAM</li>
@@ -18,7 +24,7 @@
   <li>Noto fonts emoji</li>
 </ul>
 
-## Notification previews 👀
+<p style=strong><b>Notification previews 👀</b></p>
 <p align="center">
   <img src="bat_now.png"/>
   <p align="center">🔌 Current battery status and charge</p>
@@ -36,7 +42,7 @@
   <p align="center">🏄‍♀️ Low memory alert</p>
 </p>
 
-## Installation
+<b>Installation 🖥️</b>
 ```
 # Clone the repo
 git clone https://github.com/celepharn/bash-scripts.git ~/.config/bash-scripts
@@ -53,8 +59,9 @@ bind=SUPERCTRL,R,exec,~/.config/hypr/nameOfScript.sh
 # For autostart scripts
 exec-once=~/.config/hypr/battery_notification.sh
 ```
-<p>in your ~/.config/hypr/hyprland.conf</p>
+<p>in your ~/.config/hypr/hyprland.conf.</p>
 <p>Please remember to change the actual name of the script you would want to use.</p>
 
-### A final note
+<b>A final note 🗒️</b>
 <p>The script that needs a comment is update.sh, this is a script to automate the process of keeping <a href='https://www.rodsbooks.com/refind/'>rEFInd</a> working every time there's a kernel update, and would need modification to suit your system. Just if you are a <a href='https://www.rodsbooks.com/refind/'>rEFInd</a> user and would want to use this.</p>
+</body>
