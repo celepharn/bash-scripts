@@ -5,7 +5,7 @@
   </head>
 <body>
 <p align="center">
-<img src='bgbash.png'/>
+<img src='bg.png'/>
 </p>
 
 <h1>Bash scripts 🐧</h1>
