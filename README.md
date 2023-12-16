@@ -1,3 +1,7 @@
+<p align="center">
+<img src='bgbash.png' margin=-2000px padding=-200px />
+</p>
+
 # Bash scripts 🐧
 <p>Welcome, this is a collection of scripts to add functionality to a minimal Linux system. I use a small 14" laptop and running a bar just takes too much space of my screen real state so I ditched it, however I missed info such as</p>
 <ul>
