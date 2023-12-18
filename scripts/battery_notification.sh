@@ -21,9 +21,9 @@ do
 	battery_level=$(((($charge))/2))
 	status=$(acpi -b | grep -P -o 'Discharging')
 	if [ -z "${status}" ]; then
-		status="discharging"
-	else 
 		status="charging"
+	else 
+		status="discharging"
 	fi
 	if [ $battery_level -gt 92 ]; then
 		dunstify "🔥 Battery full." "You can unplug now."
